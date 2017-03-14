@@ -3,9 +3,9 @@ var mailsSendCounter=0
 var bodyEmail="Hello this is a email to mr mario"
 var mailName=["supermario","@gmail.com"]
 
+sendMail=function(body,mailToSendTo,subject){
 
-
-// var smtpTransport = nodemailer.createTransport("smtps://mail%40assesstm.com:pass@smtp.gmail.com"); // PUT YOUR SMTP HERE
+var smtpTransport = nodemailer.createTransport("smtps://mail%40assesstm.com:pass@smtp.gmail.com"); // PUT YOUR SMTP HERE
 
   smtpTransport.sendMail({  //email options
      from: "Sender Name <h.rashwan@assesstm.com>", // sender address.  Must be the same as authenticated user if using Gmail.
